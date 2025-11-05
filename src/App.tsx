@@ -142,8 +142,9 @@ function App() {
         </div>
       </div>
 
-      <div id="why-us" className="w-full bg-gradient-to-b from-it-dark to-gray-900 py-20 px-6">
-        <div className="max-w-7xl mx-auto">
+      <div id="why-us" className="w-full bg-cover bg-center bg-no-repeat py-20 px-6 relative" style={{backgroundImage: 'url(/src/img/whyus-bg.jpg)'}}>
+        <div className="absolute inset-0 bg-gradient-to-b from-[#111111] to-[#000000] opacity-65"></div>
+        <div className="max-w-7xl mx-auto relative z-10">
           <h2 className="font-montserrat text-4xl md:text-5xl font-bold text-white text-center mb-16 tracking-tight uppercase">
             WHY PARTNER WITH US
           </h2>
