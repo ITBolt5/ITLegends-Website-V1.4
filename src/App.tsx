@@ -172,14 +172,15 @@ function App() {
         </div>
       </div>
 
-      <div id="contact" className="w-full bg-gradient-to-b from-white to-it-silver/30 py-20 px-6">
-        <div className="max-w-4xl mx-auto">
-          <h2 className="font-montserrat text-4xl md:text-5xl font-bold text-it-dark text-center mb-4 tracking-tight uppercase">
+      <div id="contact" className="w-full bg-cover bg-center bg-no-repeat py-20 px-6 relative" style={{backgroundImage: 'url(/src/img/contact-bg.jpg)'}}>
+        <div className="absolute inset-0 bg-[#0B0B22]/70"></div>
+        <div className="max-w-4xl mx-auto relative z-10">
+          <h2 className="font-montserrat text-4xl md:text-5xl font-bold text-white text-center mb-4 tracking-tight uppercase">
             LET'S BUILD SOMETHING LEGENDARY
           </h2>
 
           <div className="flex flex-col items-center gap-6 mb-12">
-            <div className="flex flex-wrap justify-center gap-6 text-gray-700">
+            <div className="flex flex-wrap justify-center gap-6 text-it-silver">
               <a href="tel:+27846348144" className="font-montserrat font-medium flex items-center gap-2 hover:text-it-red transition-colors">
                 <Phone className="w-5 h-5" />
                 <span>(+27) 84 634 8144</span>
@@ -322,10 +323,10 @@ function ContactForm() {
   };
 
   return (
-    <form onSubmit={handleSubmit} className="max-w-2xl mx-auto bg-white rounded-2xl shadow-xl p-8 border border-it-blue/20">
+    <form onSubmit={handleSubmit} className="max-w-2xl mx-auto bg-white/10 backdrop-blur-md rounded-2xl shadow-xl p-8 border border-it-silver/30">
       <div className="space-y-6">
         <div>
-          <label htmlFor="name" className="block text-sm font-montserrat font-semibold text-it-dark mb-2">
+          <label htmlFor="name" className="block text-sm font-montserrat font-semibold text-white mb-2">
             Name
           </label>
           <input
@@ -335,13 +336,13 @@ function ContactForm() {
             value={formData.name}
             onChange={handleChange}
             required
-            className="w-full px-4 py-3 border border-gray-300 rounded-xl focus:outline-none focus:ring-2 focus:ring-it-red focus:border-transparent transition-all duration-200 font-montserrat"
+            className="w-full px-4 py-3 border border-it-silver/40 rounded-xl bg-white/10 text-white placeholder-it-silver/50 focus:outline-none focus:ring-2 focus:ring-it-red focus:border-transparent transition-all duration-200 font-montserrat"
             placeholder="Your name"
           />
         </div>
 
         <div>
-          <label htmlFor="email" className="block text-sm font-montserrat font-semibold text-it-dark mb-2">
+          <label htmlFor="email" className="block text-sm font-montserrat font-semibold text-white mb-2">
             Email
           </label>
           <input
@@ -351,13 +352,13 @@ function ContactForm() {
             value={formData.email}
             onChange={handleChange}
             required
-            className="w-full px-4 py-3 border border-gray-300 rounded-xl focus:outline-none focus:ring-2 focus:ring-it-red focus:border-transparent transition-all duration-200 font-montserrat"
+            className="w-full px-4 py-3 border border-it-silver/40 rounded-xl bg-white/10 text-white placeholder-it-silver/50 focus:outline-none focus:ring-2 focus:ring-it-red focus:border-transparent transition-all duration-200 font-montserrat"
             placeholder="your.email@example.com"
           />
         </div>
 
         <div>
-          <label htmlFor="message" className="block text-sm font-montserrat font-semibold text-it-dark mb-2">
+          <label htmlFor="message" className="block text-sm font-montserrat font-semibold text-white mb-2">
             Message
           </label>
           <textarea
@@ -367,7 +368,7 @@ function ContactForm() {
             onChange={handleChange}
             required
             rows={5}
-            className="w-full px-4 py-3 border border-gray-300 rounded-xl focus:outline-none focus:ring-2 focus:ring-it-red focus:border-transparent transition-all duration-200 resize-none font-montserrat"
+            className="w-full px-4 py-3 border border-it-silver/40 rounded-xl bg-white/10 text-white placeholder-it-silver/50 focus:outline-none focus:ring-2 focus:ring-it-red focus:border-transparent transition-all duration-200 resize-none font-montserrat"
             placeholder="Tell us about your IT needs..."
           />
         </div>
@@ -375,13 +376,13 @@ function ContactForm() {
         <button
           type="submit"
           disabled={isSubmitting}
-          className="w-full px-8 py-4 bg-it-red hover:bg-it-red/80 text-white font-montserrat font-semibold rounded-xl shadow-[0_0_20px_rgba(199,0,57,0.4)] hover:shadow-[0_0_30px_rgba(199,0,57,0.7)] transition-all duration-300 transform hover:scale-105 disabled:opacity-50 disabled:cursor-not-allowed disabled:transform-none"
+          className="w-full px-8 py-4 bg-gradient-to-r from-it-red to-it-blue hover:from-it-red/80 hover:to-it-blue/80 text-white font-montserrat font-semibold rounded-xl shadow-[0_0_25px_rgba(199,0,57,0.5),0_0_15px_rgba(0,123,255,0.4)] hover:shadow-[0_0_35px_rgba(199,0,57,0.8),0_0_25px_rgba(0,123,255,0.7)] transition-all duration-300 transform hover:scale-105 disabled:opacity-50 disabled:cursor-not-allowed disabled:transform-none"
         >
           {isSubmitting ? 'Sending...' : 'Send Message'}
         </button>
 
         {submitStatus === 'success' && (
-          <div className="text-center text-green-600 font-montserrat font-semibold animate-fade-in">
+          <div className="text-center text-green-400 font-montserrat font-semibold animate-fade-in">
             Message sent successfully! We'll get back to you soon.
           </div>
         )}
