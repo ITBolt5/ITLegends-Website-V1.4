@@ -39,11 +39,11 @@ function App() {
         </div>
       </nav>
 
-      <div id="home" className="min-h-screen bg-cover bg-center bg-no-repeat flex items-center justify-center relative overflow-hidden animate-section-fade" style={{backgroundImage: 'url(/src/img/hero-bg.jpg)'}}>
-        <div className="absolute inset-0 bg-[#0A0A0A]/65"></div>
+      <div id="home" className="min-h-screen bg-cover bg-center bg-no-repeat flex items-center justify-center relative overflow-hidden section-fade" style={{backgroundImage: 'url(/src/img/hero-bg.jpg)'}}>
+        <div className="absolute inset-0 bg-[#0A0A0A]/70"></div>
         <div className="absolute inset-0 overflow-hidden">
-          <div className="absolute top-0 left-1/4 w-96 h-96 bg-it-blue/10 rounded-full blur-3xl animate-pulse"></div>
-          <div className="absolute bottom-0 right-1/4 w-96 h-96 bg-it-red/10 rounded-full blur-3xl animate-pulse delay-700"></div>
+          <div className="absolute top-0 left-1/4 w-96 h-96 bg-it-blue/15 rounded-full blur-3xl animate-pulse"></div>
+          <div className="absolute bottom-0 right-1/4 w-96 h-96 bg-it-red/15 rounded-full blur-3xl animate-pulse delay-700"></div>
           <div className="absolute top-1/2 left-0 w-full h-px bg-gradient-to-r from-transparent via-it-blue/50 to-transparent"></div>
           <div className="absolute top-1/3 left-0 w-full h-px bg-gradient-to-r from-transparent via-it-red/30 to-transparent"></div>
           <div className="absolute top-2/3 left-0 w-full h-px bg-gradient-to-r from-transparent via-it-blue/30 to-transparent"></div>
@@ -79,31 +79,39 @@ function App() {
         </div>
       </div>
 
-      <div className="w-full bg-gradient-to-b from-it-dark to-it-silver/20 py-20 animate-section-fade">
+      <div className="w-full bg-gradient-to-b from-it-dark to-it-silver/20 py-20 section-fade">
         <div className="h-px bg-gradient-to-r from-it-red via-it-blue to-it-red shadow-[0_0_10px_rgba(199,0,57,0.5)]"></div>
       </div>
 
-      <div id="about" className="w-full bg-cover bg-center bg-no-repeat py-20 px-6 relative animate-section-fade" style={{backgroundImage: 'url(/src/img/about-bg.jpg)'}}>
-        <div className="absolute inset-0 bg-[#E0E0E0]/35"></div>
+      <div id="about" className="w-full bg-cover bg-center bg-no-repeat py-20 px-6 relative section-fade" style={{backgroundImage: 'url(/src/img/about-bg.jpg)'}}>
+        <div className="absolute inset-0 bg-[#E0E0E0]/50"></div>
+        <div className="absolute inset-0 overflow-hidden">
+          <div className="absolute top-1/4 right-1/4 w-96 h-96 bg-it-blue/8 rounded-full blur-3xl"></div>
+          <div className="absolute bottom-1/4 left-1/4 w-96 h-96 bg-it-red/8 rounded-full blur-3xl"></div>
+        </div>
         <div className="max-w-5xl mx-auto text-center relative z-10">
-          <h2 className="font-montserrat text-4xl md:text-5xl font-bold text-[#1A1A1A] mb-12 tracking-tight uppercase">
+          <h2 className="font-montserrat text-4xl md:text-5xl font-bold text-[#0A0A0A] mb-12 tracking-tight uppercase drop-shadow-[0_2px_4px_rgba(255,255,255,0.3)]">
             WHO WE ARE
           </h2>
 
-          <p className="font-montserrat text-[#1A1A1A] text-lg md:text-xl mb-6 max-w-3xl mx-auto">
+          <p className="font-montserrat text-[#0A0A0A] text-lg md:text-xl mb-6 max-w-3xl mx-auto drop-shadow-[0_1px_2px_rgba(255,255,255,0.2)]">
             Our mission is to protect, maintain, and enhance your technology infrastructure so you can focus on what truly matters — your business growth.
           </p>
 
-          <p className="font-montserrat text-[#2A2A2A] text-base md:text-lg max-w-3xl mx-auto">
+          <p className="font-montserrat text-[#1A1A1A] text-base md:text-lg max-w-3xl mx-auto drop-shadow-[0_1px_2px_rgba(255,255,255,0.2)]">
             We deliver innovative, reliable, and efficient IT support for businesses of all sizes.
           </p>
         </div>
       </div>
 
-      <div id="services" className="w-full bg-cover bg-center bg-no-repeat py-20 px-6 relative animate-section-fade" style={{backgroundImage: 'url(/src/img/services-bg.jpg)'}}>
-        <div className="absolute inset-0 bg-[#0033AA]/45"></div>
+      <div id="services" className="w-full bg-cover bg-center bg-no-repeat py-20 px-6 relative section-fade" style={{backgroundImage: 'url(/src/img/services-bg.jpg)'}}>
+        <div className="absolute inset-0 bg-[#0033AA]/55"></div>
+        <div className="absolute inset-0 overflow-hidden">
+          <div className="absolute top-0 left-1/3 w-96 h-96 bg-it-red/12 rounded-full blur-3xl animate-pulse"></div>
+          <div className="absolute bottom-0 right-1/3 w-96 h-96 bg-it-blue/12 rounded-full blur-3xl animate-pulse delay-700"></div>
+        </div>
         <div className="max-w-7xl mx-auto relative z-10">
-          <h2 className="font-montserrat text-4xl md:text-5xl font-bold text-white text-center mb-16 tracking-tight uppercase">
+          <h2 className="font-montserrat text-4xl md:text-5xl font-bold text-white text-center mb-16 tracking-tight uppercase drop-shadow-[0_4px_8px_rgba(0,0,0,0.5)]">
             OUR SERVICES
           </h2>
 
@@ -142,10 +150,15 @@ function App() {
         </div>
       </div>
 
-      <div id="why-us" className="w-full bg-cover bg-center bg-no-repeat py-20 px-6 relative animate-section-fade" style={{backgroundImage: 'url(/src/img/whyus-bg.jpg)'}}>
-        <div className="absolute inset-0 bg-gradient-to-b from-[#111111] to-[#000000] opacity-70"></div>
+      <div id="why-us" className="w-full bg-cover bg-center bg-no-repeat py-20 px-6 relative section-fade" style={{backgroundImage: 'url(/src/img/whyus-bg.jpg)'}}>
+        <div className="absolute inset-0 bg-gradient-to-b from-[#0A0A0A] to-[#000000] opacity-75"></div>
+        <div className="absolute inset-0 overflow-hidden">
+          <div className="absolute top-1/3 left-0 w-full h-px bg-gradient-to-r from-transparent via-it-blue/40 to-transparent"></div>
+          <div className="absolute top-0 right-1/4 w-96 h-96 bg-it-blue/10 rounded-full blur-3xl"></div>
+          <div className="absolute bottom-0 left-1/4 w-96 h-96 bg-it-red/10 rounded-full blur-3xl"></div>
+        </div>
         <div className="max-w-7xl mx-auto relative z-10">
-          <h2 className="font-montserrat text-4xl md:text-5xl font-bold text-white text-center mb-16 tracking-tight uppercase">
+          <h2 className="font-montserrat text-4xl md:text-5xl font-bold text-white text-center mb-16 tracking-tight uppercase drop-shadow-[0_4px_8px_rgba(0,0,0,0.5)]">
             WHY PARTNER WITH US
           </h2>
 
@@ -172,10 +185,14 @@ function App() {
         </div>
       </div>
 
-      <div id="contact" className="w-full bg-cover bg-center bg-no-repeat py-20 px-6 relative animate-section-fade" style={{backgroundImage: 'url(/src/img/contact-bg.jpg)'}}>
-        <div className="absolute inset-0 bg-[#0B0B22]/75"></div>
+      <div id="contact" className="w-full bg-cover bg-center bg-no-repeat py-20 px-6 relative section-fade" style={{backgroundImage: 'url(/src/img/contact-bg.jpg)'}}>
+        <div className="absolute inset-0 bg-[#0B0B22]/70"></div>
+        <div className="absolute inset-0 overflow-hidden">
+          <div className="absolute top-0 left-1/2 w-96 h-96 bg-it-red/12 rounded-full blur-3xl animate-pulse"></div>
+          <div className="absolute bottom-0 right-1/2 w-96 h-96 bg-it-blue/12 rounded-full blur-3xl animate-pulse delay-700"></div>
+        </div>
         <div className="max-w-4xl mx-auto relative z-10">
-          <h2 className="font-montserrat text-4xl md:text-5xl font-bold text-white text-center mb-4 tracking-tight uppercase">
+          <h2 className="font-montserrat text-4xl md:text-5xl font-bold text-white text-center mb-4 tracking-tight uppercase drop-shadow-[0_4px_8px_rgba(0,0,0,0.5)]">
             LET'S BUILD SOMETHING LEGENDARY
           </h2>
 
@@ -228,7 +245,7 @@ function App() {
         </div>
       </div>
 
-      <footer className="w-full bg-it-dark py-8 px-6 border-t border-it-blue/30 animate-section-fade">
+      <footer className="w-full bg-it-dark py-8 px-6 border-t border-it-blue/30 section-fade">
         <div className="max-w-7xl mx-auto text-center">
           <p className="font-montserrat text-it-silver text-sm md:text-base font-medium">
             © 2025 IT Legends — Providing You with LEGENDARY Services.
