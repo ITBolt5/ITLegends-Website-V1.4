@@ -93,11 +93,12 @@ function App() {
         </div>
 
         <div className="relative z-10 max-w-5xl mx-auto px-6 text-center">
-          <div className="mb-6 flex justify-center">
+          <div className="mb-8 flex justify-center">
             <img
               src={logoHero}
               alt="IT Legends Hero Logo"
-              className="w-[320px] h-[76px] md:w-[440px] md:h-[104px] object-contain drop-shadow-[0_0_30px_rgba(0,123,255,0.25)]"
+              className="w-[300px] h-[70px] sm:w-[400px] sm:h-[94px] md:w-[520px] md:h-[122px] object-contain transition-all duration-300"
+              style={{ filter: 'drop-shadow(0 0 8px rgba(0, 123, 255, 0.25))', opacity: 1, mixBlendMode: 'normal' }}
             />
           </div>
 
