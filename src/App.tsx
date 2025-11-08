@@ -115,7 +115,7 @@ function App() {
         </div>
       </div>
 
-      <MicroDivider fromColor="rgba(10, 10, 10, 0.85)" toColor="rgba(10, 10, 10, 1)" />
+      <MicroDivider />
 
       <div id="about" className="w-full bg-cover bg-center bg-no-repeat py-20 px-6 relative section-fade" style={{backgroundImage: 'url(/src/img/about-bg.jpg)'}}>
         <div className="absolute inset-0 bg-gradient-to-b from-[#0A0A0A]/60 via-[#0A0A0A]/60 to-[#0A0A0A]/50"></div>
@@ -139,7 +139,7 @@ function App() {
         </div>
       </div>
 
-      <MicroDivider fromColor="rgba(10, 10, 10, 0.9)" toColor="rgba(0, 51, 170, 0.4)" blurEdges />
+      <MicroDivider />
 
       <div id="services" className="w-full bg-cover bg-center bg-no-repeat py-20 px-6 relative section-fade" style={{backgroundImage: 'url(/src/img/services-bg.jpg)'}}>
         <div className="absolute inset-0 bg-[#0A0A0A]/70"></div>
@@ -190,7 +190,7 @@ function App() {
         </div>
       </div>
 
-      <MicroDivider fromColor="rgba(10, 10, 10, 0.7)" toColor="rgba(10, 10, 10, 1)" />
+      <MicroDivider />
 
       <div id="why-us" className="w-full bg-cover bg-center bg-no-repeat py-20 px-6 relative section-fade" style={{backgroundImage: 'url(/src/img/whyus-bg.jpg)'}}>
         <div className="absolute inset-0 bg-gradient-to-b from-[#0A0A0A] to-[#000000] opacity-75"></div>
@@ -230,7 +230,7 @@ function App() {
         </div>
       </div>
 
-      <MicroDivider fromColor="rgba(10, 10, 10, 1)" toColor="rgba(11, 11, 34, 0.7)" />
+      <MicroDivider />
 
       <div id="contact" className="w-full bg-cover bg-center bg-no-repeat py-20 px-6 relative section-fade" style={{backgroundImage: 'url(/src/img/contact-bg.jpg)'}}>
         <div className="absolute inset-0 bg-[#0B0B22]/70"></div>
@@ -295,7 +295,7 @@ function App() {
         </div>
       </div>
 
-      <MicroDivider fromColor="rgba(11, 11, 34, 0.7)" toColor="rgba(26, 26, 26, 1)" />
+      <MicroDivider />
 
       <footer className="w-full bg-it-dark py-8 px-6 border-t border-it-blue/30 section-fade">
         <div className="max-w-7xl mx-auto text-center">
