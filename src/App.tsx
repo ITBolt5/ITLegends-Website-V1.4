@@ -1,6 +1,7 @@
 import { ArrowRight, Shield, Headphones, Cpu, Lock, Cloud, Server, Users, Zap, Award, Expand, Phone, Mail, Globe, MessageSquare } from 'lucide-react';
 import { useState, useEffect, useRef } from 'react';
 import MicroDivider from './components/MicroDivider';
+import logoNavbar from './img/logo-navbar.png';
 
 function GradientDivider() {
   const [isVisible, setIsVisible] = useState(false);
@@ -60,10 +61,14 @@ function App() {
     <div className="w-full">
       <nav className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${isScrolled ? 'bg-it-dark/95 backdrop-blur-md shadow-lg' : 'bg-transparent'}`}>
         <div className="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
-          <div className="flex items-center gap-2">
-            <Shield className={`w-8 h-8 transition-colors ${isScrolled ? 'text-it-blue' : 'text-white'}`} />
+          <a href="/" className="flex items-center gap-2">
+            <img
+              src={logoNavbar}
+              alt="IT Legends Logo"
+              className="w-[150px] h-[36px] md:w-[200px] md:h-[48px] object-contain transition-all duration-300 hover:drop-shadow-[0_0_15px_rgba(0,123,255,0.25)]"
+            />
             <span className={`font-montserrat font-bold text-lg tracking-widest uppercase transition-colors ${isScrolled ? 'text-white' : 'text-white'}`}>IT LEGENDS</span>
-          </div>
+          </a>
 
           <div className="hidden md:flex items-center gap-8">
             <button onClick={() => scrollToSection('home')} className={`font-montserrat font-medium transition-colors hover:text-it-red ${isScrolled ? 'text-it-silver' : 'text-white/90'}`}>Home</button>
