@@ -1,6 +1,8 @@
 import { ArrowRight, Shield, Headphones, Cpu, Lock, Cloud, Server, Users, Zap, Award, Expand, Phone, Mail, Globe, MessageSquare } from 'lucide-react';
 import { useState, useEffect, useRef } from 'react';
 import MicroDivider from './components/MicroDivider';
+import ConsentBanner from './components/ConsentBanner';
+import { initializeAnalytics, getStoredConsent, ConsentState } from './utils/analytics';
 import logoNavbar from './img/logo-navbar.png';
 import logoHero from './img/logo-hero.png';
 
@@ -41,6 +43,17 @@ function GradientDivider() {
 
 function App() {
   const [isScrolled, setIsScrolled] = useState(false);
+  const [consent, setConsent] = useState<ConsentState>({ analytics: false, marketing: false });
+
+  useEffect(() => {
+    const storedConsent = getStoredConsent();
+    if (storedConsent) {
+      setConsent(storedConsent);
+      initializeAnalytics(storedConsent);
+    } else {
+      initializeAnalytics({ analytics: false, marketing: false });
+    }
+  }, []);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -60,6 +73,7 @@ function App() {
 
   return (
     <div className="w-full">
+      <ConsentBanner onConsent={setConsent} />
       <nav className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${isScrolled ? 'bg-it-dark/95 backdrop-blur-md shadow-lg' : 'bg-transparent'}`}>
         <div className="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
           <a href="/" className="flex items-center gap-3 pl-4 sm:pl-4 md:pl-6">
