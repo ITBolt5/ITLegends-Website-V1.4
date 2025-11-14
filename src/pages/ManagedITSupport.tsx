@@ -259,6 +259,23 @@ export default function ManagedITSupport() {
   const [isScrolled, setIsScrolled] = useState(false);
 
   useEffect(() => {
+    document.title = 'Managed IT Support | IT Legends';
+
+    const metaDescription = document.querySelector('meta[name="description"]');
+    if (metaDescription) {
+      metaDescription.setAttribute('content', 'Proactive managed IT support for South African businesses, including remote and onsite help, monitoring, and maintenance.');
+    }
+
+    let canonicalLink = document.querySelector('link[rel="canonical"]');
+    if (!canonicalLink) {
+      canonicalLink = document.createElement('link');
+      canonicalLink.rel = 'canonical';
+      document.head.appendChild(canonicalLink);
+    }
+    canonicalLink.href = 'https://www.itlegends.co.za/services/managed-it-support';
+  }, []);
+
+  useEffect(() => {
     const handleScroll = () => {
       setIsScrolled(window.scrollY > 50);
     };
