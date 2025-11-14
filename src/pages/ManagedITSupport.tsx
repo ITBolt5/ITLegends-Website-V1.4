@@ -1,4 +1,4 @@
-import { ArrowRight, AlertTriangle, Clock, DollarSign, Shield, Zap, CheckCircle, TrendingUp, Phone, Mail } from 'lucide-react';
+import { ArrowRight, AlertTriangle, Clock, DollarSign, Shield, Zap, CheckCircle, TrendingUp, Phone, Mail, Headphones, Eye } from 'lucide-react';
 import { useState } from 'react';
 import MicroDivider from '../components/MicroDivider';
 import logoNavbar from '../img/logo-navbar.png';
@@ -410,37 +410,42 @@ export default function ManagedITSupport() {
             Comprehensive managed IT support that keeps your systems running smoothly
           </p>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            <SolutionCard
-              icon={<Zap className="w-10 h-10" />}
-              title="Proactive Monitoring"
-              description="We monitor your systems 24/7 and fix issues before they become problems"
-            />
-            <SolutionCard
-              icon={<Shield className="w-10 h-10" />}
-              title="Security Management"
-              description="Advanced threat detection, antivirus, firewall management, and regular security updates"
-            />
-            <SolutionCard
-              icon={<CheckCircle className="w-10 h-10" />}
-              title="Fast Response Times"
-              description="Critical issues resolved within minutes, not hours or days"
-            />
-            <SolutionCard
-              icon={<TrendingUp className="w-10 h-10" />}
-              title="Regular Updates"
-              description="System patches, software updates, and performance optimization"
-            />
-            <SolutionCard
-              icon={<Phone className="w-10 h-10" />}
-              title="Dedicated Support Team"
-              description="Access to certified technicians via phone, email, or remote assistance"
-            />
-            <SolutionCard
-              icon={<DollarSign className="w-10 h-10" />}
-              title="Predictable Pricing"
-              description="Fixed monthly costs with no surprise bills or hidden fees"
-            />
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-6xl mx-auto">
+            <div className="relative bg-white/5 backdrop-blur-sm border border-it-blue/30 rounded-xl p-8 transition-all duration-300 hover:bg-white/10 hover:border-it-blue/50 group">
+              <div className="flex items-center justify-center w-16 h-16 rounded-lg bg-gradient-to-br from-it-blue/30 to-it-blue/20 mb-6 group-hover:shadow-[0_0_25px_rgba(0,123,255,0.6)] transition-all duration-300 text-it-blue drop-shadow-[0_0_15px_rgba(0,123,255,0.4)] mx-auto">
+                <Headphones className="w-8 h-8" />
+              </div>
+              <h3 className="font-montserrat text-2xl font-bold text-it-blue text-center mb-3 tracking-tight uppercase">
+                24/7 Remote & Onsite Support
+              </h3>
+              <p className="font-montserrat text-white text-center leading-relaxed font-medium">
+                Guaranteed SLAs with response times tailored to your business needs. Our team is always ready to help, whenever you need us.
+              </p>
+            </div>
+
+            <div className="relative bg-white/5 backdrop-blur-sm border border-it-blue/30 rounded-xl p-8 transition-all duration-300 hover:bg-white/10 hover:border-it-blue/50 group">
+              <div className="flex items-center justify-center w-16 h-16 rounded-lg bg-gradient-to-br from-it-blue/30 to-it-blue/20 mb-6 group-hover:shadow-[0_0_25px_rgba(0,123,255,0.6)] transition-all duration-300 text-it-blue drop-shadow-[0_0_15px_rgba(0,123,255,0.4)] mx-auto">
+                <Eye className="w-8 h-8" />
+              </div>
+              <h3 className="font-montserrat text-2xl font-bold text-it-blue text-center mb-3 tracking-tight uppercase">
+                Proactive Monitoring & Maintenance
+              </h3>
+              <p className="font-montserrat text-white text-center leading-relaxed font-medium">
+                We catch problems before they happen, preventing failures and keeping your infrastructure running smoothly 24/7.
+              </p>
+            </div>
+
+            <div className="relative bg-white/5 backdrop-blur-sm border border-it-blue/30 rounded-xl p-8 transition-all duration-300 hover:bg-white/10 hover:border-it-blue/50 group">
+              <div className="flex items-center justify-center w-16 h-16 rounded-lg bg-gradient-to-br from-it-blue/30 to-it-blue/20 mb-6 group-hover:shadow-[0_0_25px_rgba(0,123,255,0.6)] transition-all duration-300 text-it-blue drop-shadow-[0_0_15px_rgba(0,123,255,0.4)] mx-auto">
+                <DollarSign className="w-8 h-8" />
+              </div>
+              <h3 className="font-montserrat text-2xl font-bold text-it-blue text-center mb-3 tracking-tight uppercase">
+                Flat-Rate Managed Packages
+              </h3>
+              <p className="font-montserrat text-white text-center leading-relaxed font-medium">
+                Predictable monthly costs that simplify budgeting. No hidden fees, no surprise bills—just transparent pricing you can count on.
+              </p>
+            </div>
           </div>
         </div>
       </div>
