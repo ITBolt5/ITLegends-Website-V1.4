@@ -339,6 +339,32 @@ function App() {
 
       <MicroDivider />
 
+      <div className="w-full py-20 px-6 relative section-fade overflow-hidden">
+        <div className="absolute inset-0 bg-gradient-to-br from-[#0A0A0A] via-[#1A1A1A] to-[#0A0A0A]"></div>
+        <div className="absolute inset-0 overflow-hidden">
+          <div className="absolute top-1/2 left-1/4 w-96 h-96 bg-it-blue/15 rounded-full blur-3xl animate-pulse"></div>
+          <div className="absolute top-1/2 right-1/4 w-96 h-96 bg-it-red/15 rounded-full blur-3xl animate-pulse delay-700"></div>
+          <div className="absolute inset-0 bg-gradient-to-t from-[#0A0A0A]/50 via-transparent to-transparent"></div>
+        </div>
+        <div className="max-w-3xl mx-auto relative z-10 text-center">
+          <h2 className="font-montserrat text-4xl md:text-5xl font-bold text-white mb-8 tracking-tight leading-tight drop-shadow-[0_4px_8px_rgba(0,0,0,0.5)]">
+            Let's Keep Your Business Online and Protected.
+          </h2>
+
+          <button onClick={() => {
+            const element = document.getElementById('contact');
+            if (element) {
+              element.scrollIntoView({ behavior: 'smooth' });
+            }
+          }} className="group px-10 py-5 bg-gradient-to-r from-it-red to-it-blue hover:from-it-red/90 hover:to-it-blue/90 text-white font-montserrat font-semibold text-lg rounded-xl shadow-[0_0_30px_rgba(199,0,57,0.4),0_0_20px_rgba(0,123,255,0.3)] hover:shadow-[0_0_50px_rgba(199,0,57,0.8),0_0_40px_rgba(0,123,255,0.7)] transition-all duration-300 transform hover:scale-105 flex items-center justify-center gap-2 mx-auto">
+            Get Started Today
+            <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
+          </button>
+        </div>
+      </div>
+
+      <MicroDivider />
+
       <div id="contact" className="w-full bg-cover bg-center bg-no-repeat py-20 px-6 relative section-fade" style={{backgroundImage: 'url(/src/img/contact-bg.jpg)'}}>
         <div className="absolute inset-0 bg-[#0B0B22]/70"></div>
         <div className="absolute inset-0 overflow-hidden">
