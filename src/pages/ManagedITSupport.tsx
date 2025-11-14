@@ -346,27 +346,54 @@ export default function ManagedITSupport() {
             These are the challenges that keep business owners up at night
           </p>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-            <PainPointCard
-              icon={<Clock className="w-10 h-10" />}
-              title="Constant Downtime"
-              description="System failures disrupt operations and cost you money every minute"
-            />
-            <PainPointCard
-              icon={<AlertTriangle className="w-10 h-10" />}
-              title="Security Threats"
-              description="Cyberattacks, data breaches, and ransomware put your business at risk"
-            />
-            <PainPointCard
-              icon={<DollarSign className="w-10 h-10" />}
-              title="Unpredictable Costs"
-              description="Emergency IT fixes and reactive support drain your budget"
-            />
-            <PainPointCard
-              icon={<Shield className="w-10 h-10" />}
-              title="No Expert Support"
-              description="Without dedicated IT staff, problems take longer to solve"
-            />
+          <div className="max-w-3xl mx-auto space-y-5">
+            <div className="flex items-start gap-4 p-5 bg-white/5 backdrop-blur-sm border border-it-red/30 rounded-lg hover:bg-white/10 hover:border-it-red/50 transition-all duration-300">
+              <div className="flex-shrink-0 mt-1">
+                <div className="flex items-center justify-center w-8 h-8 rounded-full bg-it-red text-white font-bold text-sm drop-shadow-[0_0_15px_rgba(199,0,57,0.6)]">
+                  •
+                </div>
+              </div>
+              <div>
+                <h3 className="font-montserrat text-lg font-bold text-white mb-1 tracking-tight">
+                  Unplanned downtime and slow tech response
+                </h3>
+                <p className="font-montserrat text-it-silver text-sm font-medium">
+                  System failures disrupt operations and cost you money every minute
+                </p>
+              </div>
+            </div>
+
+            <div className="flex items-start gap-4 p-5 bg-white/5 backdrop-blur-sm border border-it-red/30 rounded-lg hover:bg-white/10 hover:border-it-red/50 transition-all duration-300">
+              <div className="flex-shrink-0 mt-1">
+                <div className="flex items-center justify-center w-8 h-8 rounded-full bg-it-red text-white font-bold text-sm drop-shadow-[0_0_15px_rgba(199,0,57,0.6)]">
+                  •
+                </div>
+              </div>
+              <div>
+                <h3 className="font-montserrat text-lg font-bold text-white mb-1 tracking-tight">
+                  Hidden costs from reactive IT maintenance
+                </h3>
+                <p className="font-montserrat text-it-silver text-sm font-medium">
+                  Emergency IT fixes and reactive support drain your budget unpredictably
+                </p>
+              </div>
+            </div>
+
+            <div className="flex items-start gap-4 p-5 bg-white/5 backdrop-blur-sm border border-it-red/30 rounded-lg hover:bg-white/10 hover:border-it-red/50 transition-all duration-300">
+              <div className="flex-shrink-0 mt-1">
+                <div className="flex items-center justify-center w-8 h-8 rounded-full bg-it-red text-white font-bold text-sm drop-shadow-[0_0_15px_rgba(199,0,57,0.6)]">
+                  •
+                </div>
+              </div>
+              <div>
+                <h3 className="font-montserrat text-lg font-bold text-white mb-1 tracking-tight">
+                  Staff frustration due to recurring computer issues
+                </h3>
+                <p className="font-montserrat text-it-silver text-sm font-medium">
+                  Repeated technical problems reduce productivity and employee satisfaction
+                </p>
+              </div>
+            </div>
           </div>
         </div>
       </div>
